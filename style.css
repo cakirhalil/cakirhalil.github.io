@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+body{
+    background-color: #e7e7e7;
+}
+.navbar{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  padding: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+.navbar a{
+  text-decoration: none;
+  color: #fff;
+}
+.logo{
+  margin-left: 30px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.list{
+  list-style: none;
+  display: flex;
+  gap:30px;
+  color: #fff;
+  margin-right: 30px;
+}
+
+#toggler,.navbar label{
+  color: #ffffff;
+  display: none;
+}
+
+/* ------------------- */
+.btns{
+    width: 100%;
+    position: relative;
+    left: 100px;
+    padding-top: 15px;
+}
+.btn a{
+    color:#fff;
+    text-decoration: none;
+}
+.btn{
+    background-color:#000000;
+	border-radius:28px;
+	border:1px solid #0212f8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #13688f;
+}
+.btn:hover {
+	background-color:#076180;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.box{
+    width: 50%;
+    font-size: 45px;
+    margin-left: 80px;
+}
+.image{
+    width: 50%;
+}
+
+.base{
+    margin-top: 100px;
+}
+.base-img{
+    width: 100px;
+    height: 100px;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.a1{    
+    margin-left: 150px;
+}
+.a2{
+    margin-left: 30px;
+    margin-right: 145px;
+    font-size: 25px;
+    text-align: start;
+}
+
+.skill{
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+}
+.b1{    
+    margin-left: 150px;
+}
+.b2{
+    margin-left: 30px;
+    font-size: 25px;
+    text-align: start;
+
+}
+
+/* ///////////////////////// */
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    height: 150px;
+    text-align: center;
+    padding: 1rem;
+   
+   
+   }
+   .sub{
+       color: #ffffff;
+       font-size: 20px;
+       text-align: center;      
+   }
+   .footer .p{
+       color: #fff;
+   }
+    
+   .social-media-foot{
+       display:inline-flex;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;  
+       margin-bottom: 2rem;
+       list-style: none;     
+   }
+   .social-media-foot i{
+       padding: .5rem;  
+       transition: .3s;
+   }
+   .social-media-foot i:hover{
+     background-color: #7f00ff;
+     color: #fff; 
+   }
+   
+   .social-media i{
+       padding: .5rem;  
+       transition: .3s;
+   }
+   .social-media i:hover{
+       background-color: #7f00ff;
+       /* color: #fff; */
+   }
+
+
+   
+   .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1200d8;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+   } 
+   .scroll-to-top:hover {
+    background-color: #0056B3;
+   }
+
+
+/* responsive */
+@media screen and
+(max-width: 600px){
+  .menu{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .logo{
+    margin-left: 0px;
+  }
+  .list{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .navbar label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  #toggler:checked ~ .menu{
+    max-height: 100%;
+  }
+
+  .wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.btns{
+  max-width: 200px; 
+  overflow: hidden;
+  padding-top: 15px;
+}
+
+  .box{   
+    width: 100%;
+    font-size: 20px;
+    margin-left: 0px;
+}
+  .topline{
+    text-align: center;
+  }
+  h2{
+    margin-left: 60px;
+  }
+  .web-img{
+    width: 365px;
+  }
+
+  .base-img{
+    width: 80px;
+    height: 80px;
+    margin-left: 25px;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+}
+.a1{    
+    margin-left: 100px;
+}
+.a2{
+    text-align: left;
+    margin-left: 75px;
+    font-size: 16px;
+}
+
+.skill{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.b1{    
+    margin-left: 100px;
+}
+.b2{
+    margin-left: 70px;
+    font-size: 16px;
+    text-align: left;
+
+}
+  
+
+
+}

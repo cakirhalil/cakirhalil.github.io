@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Halil Çakır</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+  <link rel="shortcut icon" href="images/web-programming-black.png">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="#" class="logo">halilcakir.</a>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="fa fa-bars"></i></label>
+    <div class="menu">
+      <ul class="list">
+        <li class="item"><a href="index.html">Home</a></li>
+        <li class="item"><a href="#about">About</a></li>
+        <li class="item"><a href="#skill">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
+
+    <div class="wrapper">
+        <div class="box">
+            <h1 class="topline">Hello !</h1>
+            <h2>I'm <span class="multiText"></span></h2>
+
+            <div class="btns">
+                <button type="button" class="btn"><a href="mailto:halilcakir343@gmail.com">Contact Me</a></button>
+            </div>
+        </div>
+
+        <div class="image">
+            <img class="web-img" src="images/web-programming-black.png" alt="web-img">
+        </div>
+    </div>
+
+    <div class="base">
+        <div id="about" class="about">
+            <div class="a1">
+                <img class="base-img" src="images/about.png" alt="web-imfo">
+            </div>
+            <div class="a2">
+                <h1>About</h1>
+                <p>Hello. I am Halil Çakır. I am a management information systems student at Selçuk University. I am someone who tries to improve himself in software. Contact me for information</p>
+            </div>
+            
+        </div>
+        <div id="skill" class="skill">
+            <div class="b1">
+                <img class="base-img" src="images/skill-development.png" alt="web-imfo">
+            </div>
+            <div class="b2">
+                <h1>Skills</h1>
+                <p>Areas of interest <br><br>
+                    - HTML<br>
+                    - CSS <br>
+                    - JAVASCRIPT <br>
+                    - FLUTTER - DART<br>
+                    - C# <br>
+                    - MSSQL <br>
+                    - DEVEXPRESS <br>
+                    - PYTHON<br><br>
+                    You can follow my github account for more.</p>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="8 12 12 8 16 12"></polyline><line x1="12" y1="16" x2="12" y2="22"></line></svg>
+    </button>
+
+    <div class="footer">
+        <ul class="social-media-foot">
+            <li><a href="tel:05422823611"><i class="fa-solid fa-square-phone fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="mailto:halilcakir343@gmail.com"><i class="fa-solid fa-envelope fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://github.com/cakirhalil"><i class="fa-brands fa-github fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/halil-%C3%A7ak%C4%B1r-hc343/"><i class="fa-brands fa-linkedin-in fa-2x" style="color: #ffffff;"></i></a></li>
+            <li><a href="https://www.instagram.com/halilcakir__/"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a></li>        
+        </ul>
+
+        <p class="sub">© 2023 Copyright : Halil Çakır | All Rights Reserved</p>
+    </div>
+    
+        
+        
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<script>var typingEffect = new Typed(".multiText", {
+    strings: ["HALİL", "a DEVELOPER", "a CODER", "a DESIGNER"],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1500
+})
+
+
+window.addEventListener('scroll', () => {
+const scrollToTopButton = document.querySelector('.scroll-to-top');
+
+if (window.pageYOffset > 200) {
+scrollToTopButton.style.opacity = '1';
+} else {
+scrollToTopButton.style.opacity = '0';
+}
+});
+document.querySelector('.scroll-to-top').addEventListener('click', () => {
+window.scrollTo({
+top: 0,
+behavior: 'smooth'
+});
+});</script>
+
+
+
+</body>
+</html>
